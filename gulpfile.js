@@ -26,7 +26,7 @@ function getBundler() {
     bundler = watchify(browserify(config.entryFile, _.extend({ debug: true }, watchify.args)));
   }
   return bundler;
-};
+}
 
 function bundle() {
   return getBundler()
